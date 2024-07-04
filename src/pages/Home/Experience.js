@@ -7,7 +7,7 @@ function Experience() {
     <div>
       <SectionTitle title="Experience" />
       <div className="flex">
-        <div className="flex flex-col gap-5 border-l-2 border-[#c72b4f82]">
+        <div className="flex flex-col gap-5 border-l-2 border-[#c72b4f82] w-1/2 sm-flow row sm-overflow scroll sm-w-full">
           {experiences.map((experience, index) => (
             <div
               onClick={() => {
@@ -17,7 +17,7 @@ function Experience() {
               <h1
                 className={`text-xl px-5 ${
                   selectedItemIndex === index
-                    ? "text-tertiary border-tertiary border-l-4 -ml[2px]"
+                    ? "text-tertiary border-tertiary border-l-4 -ml[2px] bg-[#e289a8] py-3"
                     : "text-white"
                 }`}>
                 {experience.period}
@@ -25,7 +25,22 @@ function Experience() {
             </div>
           ))}
         </div>
-        <div></div>
+        <div className="flex flex-col gap-5">
+          <h2 className="text-secondary text-2xl">
+            {experiences[selectedItemIndex].title}
+          </h2>
+          <h2 className="text-tertiary text-2xl">
+            {experiences[selectedItemIndex].company}
+          </h2>
+          <p className="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac
+            metus feugiat erat luctus gravida quis nec ligula. Aenean pulvinar
+            eget lacus quis dignissim. Donec ac dolor mattis, mollis velit
+            vitae, venenatis massa. Proin vitae porta purus, at euismod augue.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
+            nisi sem. Donec vel ipsum laoreet, efficitur eros at.
+          </p>
+        </div>
       </div>
     </div>
   );
