@@ -6,3 +6,18 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #28334aff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(78, 94, 127);
+  border-radius: 10px;
+}
