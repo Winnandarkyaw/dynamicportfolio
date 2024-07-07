@@ -8,7 +8,7 @@ function Course() {
     <div>
       <SectionTitle title="Courses" />
       <div className="flex py-10 gap-20 sm:flex-col">
-        <div className="flex flex-col gap-5 border-l-2 border-[#c72b4f82] w-1/2 sm:flex-row sm:overflow-x-scroll sm:w-full">
+        <div className="flex flex-col gap-5 border-l-2 border-[#69748e] w-1/2 sm:flex-row sm:overflow-x-scroll sm:w-full">
           {courses.map((course, index) => (
             <div
               key={index}
@@ -19,7 +19,7 @@ function Course() {
               <h1
                 className={`text-xl px-5 ${
                   selectedItemIndex === index
-                    ? "text-tertiary border-tertiary border-l-4 -ml[2px] bg-[#eae6e7] py-3"
+                    ? "text-primary border-[#274da5] border-l-4 -ml[2px] bg-[#758dc4] py-3"
                     : "text-white"
                 }`}>
                 {course.title}
@@ -44,7 +44,7 @@ function Course() {
           <img
             src={courses[selectedItemIndex].image}
             alt=""
-            className="h-60 w-72"
+            className="h-52 w-80"
           />
         </div>
       </div>

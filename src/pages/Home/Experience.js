@@ -18,7 +18,7 @@ function Experience() {
               <h1
                 className={`text-xl px-5 ${
                   selectedItemIndex === index
-                    ? "text-tertiary border-tertiary border-l-4 -ml[2px] bg-[#e289a8] py-3"
+                    ? "text-tertiary border-[#991f3e82] border-l-4 -ml[2px] bg-[#f8b8ce] py-3"
                     : "text-white"
                 }`}>
                 {experience.period}
